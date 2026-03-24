@@ -190,7 +190,7 @@ class TrainsPage extends StatelessWidget {
       'from': 'ঢাকা',
       'to': 'চট্টগ্রাম',
       'price': 650,
-      'image': 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80',
+      'image': 'assets/train_images/turag_express.png',
       'time': '১০:৩০ পূর্বাহ্ন',
       'seats': 80,
     },
@@ -199,7 +199,7 @@ class TrainsPage extends StatelessWidget {
       'from': 'ঢাকা',
       'to': 'সিলেট',
       'price': 850,
-      'image': 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&q=80',
+      'image': 'assets/train_images/rupali_express.png',
       'time': '০৬:০০ সকাল',
       'seats': 100,
     },
@@ -208,7 +208,8 @@ class TrainsPage extends StatelessWidget {
       'from': 'ঢাকা',
       'to': 'খুলনা',
       'price': 750,
-      'image': 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80',
+     
+      'image': 'assets/train_images/mahananda_express.png',
       'time': '০৮:১৫ সকাল',
       'seats': 120,
     },
@@ -217,7 +218,7 @@ class TrainsPage extends StatelessWidget {
       'from': 'ঢাকা',
       'to': 'বরিশাল',
       'price': 550,
-      'image': 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&q=80',
+      'image': 'assets/train_images/padma_express.png',
       'time': '১২:০০ দুপুর',
       'seats': 90,
     },
@@ -226,7 +227,7 @@ class TrainsPage extends StatelessWidget {
       'from': 'ঢাকা',
       'to': 'রাজশাহী',
       'price': 900,
-      'image': 'https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=400&q=80',
+      'image': 'assets/train_images/odisha_express.png',
       'time': '১৫:৪৫ অপরাহ্ন',
       'seats': 110,
     },
@@ -235,7 +236,7 @@ class TrainsPage extends StatelessWidget {
       'from': 'চট্টগ্রাম',
       'to': 'কক্সবাজার',
       'price': 500,
-      'image': 'https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&q=80',
+      'image': 'assets/train_images/nilsagar_express.png',
       'time': '০৭:৩০ সকাল',
       'seats': 75,
     },
@@ -280,7 +281,7 @@ class TrainsPage extends StatelessWidget {
                 borderRadius: BorderRadius.circular(12),
                 child: Column(
                   children: [
-                    Image.network(
+                    Image.asset(
                       train['image'] as String,
                       height: 140,
                       width: double.infinity,
@@ -378,7 +379,7 @@ class _TrainDetailPageState extends State<TrainDetailPage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Image.network(
+            Image.asset(
               train['image'] as String,
               height: 220,
               width: double.infinity,
